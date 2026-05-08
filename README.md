@@ -172,6 +172,29 @@ kagglehub>=0.2.0
 torch>=2.0.0
 ```
 
+### Model Download
+
+The fine-tuned model checkpoint is hosted on Google Drive and can be downloaded directly using `gdown`, no manual download required.
+
+Download and extract the model:
+
+```bash
+# Install gdown if not already installed
+pip install gdown
+
+# Download the zipped model
+gdown --id 1xJz5OwqhQnDwZveKxCwhEVvjsc1zekKe -O my_model.zip
+
+# Extract
+unzip my_model.zip -d parsT5_persian_news_summarizer && rm my_model.zip
+
+# Load instantly in your code
+from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
+
+tokenizer = AutoTokenizer.from_pretrained("./parsT5_persian_news_summarizer")
+model = AutoModelForSeq2SeqLM.from_pretrained("./parsT5_persian_news_summarizer")
+```
+
 ---
 
 ## Limitations & Future Work
@@ -205,3 +228,9 @@ torch>=2.0.0
 - **Hazm**: [Persian NLP Toolkit](https://github.com/sobhe/hazm) by Sobhan Mohammadi
 - **Hugging Face**: [Transformers](https://github.com/huggingface/transformers), [Datasets](https://github.com/huggingface/datasets), [Evaluate](https://github.com/huggingface/evaluate)
 - **Kaggle**: Free GPU environment for training
+
+---
+**Course:** Deep Learning    
+**University:** Amirkabir University of Technology    
+**Semester:** Fall 2025    
+**Author:** Hadi Salavati
