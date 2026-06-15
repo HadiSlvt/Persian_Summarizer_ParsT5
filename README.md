@@ -1,8 +1,5 @@
 # Persian Summarizer with Fine-Tuned ParsT5
 
-[![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
-[![Hugging Face](https://img.shields.io/badge/🤗-Transformers-yellow.svg)](https://huggingface.co/transformers/)
-[![Kaggle](https://img.shields.io/badge/Kaggle-Notebook-blue.svg)](https://www.kaggle.com/)
 
 **Abstractive Persian text summarization by fine-tuning ParsT5-base on a large-scale Persian news corpus.**
 
